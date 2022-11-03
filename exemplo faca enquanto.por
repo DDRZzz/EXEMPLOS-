@@ -3,23 +3,20 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro idade = 0, idadeVelho = 0
-		cadeia nome = "" , nomeVelho = ""
+		inteiro l
 
 		faca{
-			escreva("Digite um nome: ")
-			leia(nome)
-			limpa()
-			escreva("Digite a idade: ")
-			leia(idade)
-			limpa()
-			se(idade > idadeVelho){
-				idadeVelho = idade
-				nomeVelho = nome 	
+			escreva("\nInforme o lado do quadrado: ")
+			leia(l)
+			se(l > 0){
+				escreva("A área é: "+l*l)
+			}senao{
+				escreva("O valor informado pro lado é invalado!")
 			}
-		}enquanto (nome != "sair")
-		se(idadeVelho > 50)
-			escreva(nomeVelho, " você é idoso")
+		}enquanto( l > 0)
+
+		 escreva("\n--------------------------")
+		 escreva("\nPrograma finalizado")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -27,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 386; 
+ * @POSICAO-CURSOR = 328; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
