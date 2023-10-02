@@ -26,14 +26,14 @@ CREATE TABLE produtos(
 	
 	SELECT NOW();
 	
-	CREATE TABLE vendas(
+CREATE TABLE vendas(
 	codVenda INT (8) NOT NULL,
 	codCliente INT (8) NOT NULL,
 	PRIMARY KEY (codVenda, codCliente),
 	FOREIGN KEY (codCliente) REFERENCES clientes (codCliente)
 	);
 	
-	CREATE TABLE produtos_venda(
+CREATE TABLE produtos_venda(
 	codVenda INT (8) NOT NULL,
 	codCliente INT (8) NOT NULL,
 	codProduto INT (8) NOT NULL,
